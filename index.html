@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar JavaScript | NIOMIC</title>
+  </head>
+  <body>
+    <button type="button" name="button" onclick="Tombol()">Tampilkan</button>
+    <br><br><hr>
+    <b>Base URI</b> Property : <br>
+    <p id="satu">contoh</p>
+    <hr>
+    <b>Body</b> Property : <br>
+    <p id="dua">contoh</p>
+    <hr>
+    <b>Create</b> Element : <br><br>
+
+    <script type="text/javascript">
+      function Tombol(){
+        var a = document.baseURI;
+        document.getElementById('satu').innerHTML = a;
+
+        var c = document.body.style.backgroundColor = 'green';
+        document.getElementById('dua').innerHTML = "contoh = " + c;
+
+        var b = document.createElement('input');
+        document.body.appendChild(b);
+      }
+    </script>
+  </body>
+</html>
